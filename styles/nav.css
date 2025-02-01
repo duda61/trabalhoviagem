@@ -1,28 +1,36 @@
-/* Estilização da barra de navegação */
-nav {
+nav.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    line-height: 0;
-    padding-block: 20px 40px;
-    background-color: var(--surface-color);
-    box-sizing: border-box;
+    padding-block: 24px;
 }
 
-/* Lista de navegação */
-nav ul {
-    list-style: none;
+#logo img {
+    height: 32px;
+}
+
+#primary-menu {
     display: flex;
     align-items: center;
-    gap: 24px;
-    padding-block: 8px;
-    margin: 0;
+    gap: 40px;
+    list-style: none;
 }
 
-/* Estilização da imagem do último item da lista (foto do perfil) */
-nav ul li:last-child img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
+#primary-menu li a {
+    display: flex;
+    align-items: center;
+    font: var(--text-md);
+    color: var(--text-color-primary);
+}
+
+#primary-menu li a img {
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
+}
+
+/* Header e Profile */
+header {
+    padding-top: 40px;
+    padding-bottom: 64px;
 }
