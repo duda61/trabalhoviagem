@@ -1,45 +1,44 @@
-header{
+header {
     padding-block: 32px;
-    font:var(--text-md);
+    font: var(--text-md);
 }
-header.container{
+
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
-#profile{
+#profile {
     display: flex;
     gap: 32px;
-
 }
 
-#profile> div{
+#profile > div {
     max-width: 384px;
 }
 
-#profile h1{
-
+#profile h1 {
     font: var(--text-lg);
     color: var(--text-color-primary);
-    margin-bottom:8px ;
+    margin-bottom: 8px;
 }
 
-#profile p{
-    font:var(--text-md);
+#profile p {
+    font: var(--text-md);
 }
 
-#info ul{
+/* Correção no #info */
+#info {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    
     width: 280px;
 }
 
-#info li{
+#info li {
     display: flex;
     align-items: center;
+    gap: 8px; /* Adiciona espaçamento entre o ícone e o texto */
 }
